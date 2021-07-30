@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=s, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLAAS FARM</title>
     <link rel="stylesheet" href="market.css">
 </head>
@@ -15,7 +16,7 @@
 <!-- NAVBAR  -->
 
 <div class="topnav" id="myTopnav">
-  <!-- <a href="sign-up.html" ><button class="button"><span>Get Started </span></button></a> -->
+  <a href="sign-up.html" ><button class="button"><span>Get Started </span></button></a>
   <a href="login.html" >Login</a>
   <a href="contact-us.html">Contact Us</a>
   <a href="services.html">Services</a>
@@ -321,41 +322,186 @@ function myFunction() {
   <div class="market-row" >
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/animals/angus.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal1">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal1" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/animals/angus.jpg" alt="PLAAS PRODUCT" style="width:70%; height: 80%; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
+
       </div>
     </div>
   
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img  src="/images/animals/beefmaster.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal2">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal2" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/animals/beefmaster.jpg" alt="PLAAS PRODUCT" style="width:70%; height: auto; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
     
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/animals/hereford.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal3">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal3" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/animals/hereford.jpg" alt="PLAAS PRODUCT" style="width:100%; height: auto; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
     
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/animals/jersey.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal4">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal4" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/animals/jersey.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
   </div>
@@ -365,41 +511,185 @@ function myFunction() {
   <div class="market-row">
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/animals/Highland.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal5">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal5" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/animals/Highland.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
   
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/animals/heifer.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal6">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal6" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/animals/heifer.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
     
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/animals/fresian.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal7">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal7" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/animals/fresian.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
     
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/animals/guernsey.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+             <p><button class="modal-button" href="#myModal8">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal8" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/animals/guernsey.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
   </div>
@@ -676,90 +966,379 @@ function myFunction() {
   </div>
     <br>
   <br>
-  <div class="market-row">
+  <div class="market-row" >
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/plants/coriander.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal9">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal9" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/plants/coriander.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
   
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/plants/beets.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal10">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal10" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/plants/beets.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
     
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/plants/leeks.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal11">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal11" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/plants/leeks.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
     
     <div class="market-column">
       <div class="market-card">
-        <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+        <img src="/images/plants/cabbage.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
+              <p><button class="modal-button" href="#myModal12">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal12" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/plants/cabbage.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
   </div>
   
-    <br>
-    <div class="market-row">
-      <div class="market-column">
-        <div class="market-card">
-          <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
+  <br>
+  <hr>
+  <div class="market-row">
+    <div class="market-column">
+      <div class="market-card">
+        <img src="/images/plants/bell peppers.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
               <h4>PRODUCT NAME</h4>
               <p class="market-price">PLAAS 00.00</p>
               <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
-        </div>
-      </div>
-    
-      <div class="market-column">
-        <div class="market-card">
-          <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
-              <h4>PRODUCT NAME</h4>
-              <p class="market-price">PLAAS 00.00</p>
-              <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
-        </div>
-      </div>
-      
-      <div class="market-column">
-        <div class="market-card">
-          <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
-              <h4>PRODUCT NAME</h4>
-              <p class="market-price">PLAAS 00.00</p>
-              <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
-        </div>
-      </div>
-      
-      <div class="market-column">
-        <div class="market-card">
-          <img src="/images/" alt="PLAAS PRODUCT" style="width:100%">
-              <h4>PRODUCT NAME</h4>
-              <p class="market-price">PLAAS 00.00</p>
-              <p>Some text about the product...</p>
-              <p><button>Add to Cart</button></p>
-        </div>
+              <p><button class="modal-button" href="#myModal13">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal13" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/plants/bell peppers.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
       </div>
     </div>
+  
+    <div class="market-column">
+      <div class="market-card">
+        <img src="/images/plants/spinach.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+              <h4>PRODUCT NAME</h4>
+              <p class="market-price">PLAAS 00.00</p>
+              <p>Some text about the product...</p>
+              <p><button class="modal-button" href="#myModal14">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal14" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/plants/spinach.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
+      </div>
+    </div>
+    
+    <div class="market-column">
+      <div class="market-card">
+        <img src="/images/plants/lettuce.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+              <h4>PRODUCT NAME</h4>
+              <p class="market-price">PLAAS 00.00</p>
+              <p>Some text about the product...</p>
+              <p><button class="modal-button" href="#myModal15">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal15" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/plants/lettuce.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
+      </div>
+    </div>
+    
+    <div class="market-column">
+      <div class="market-card">
+        <img src="/images/plants/kale.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+              <h4>PRODUCT NAME</h4>
+              <p class="market-price">PLAAS 00.00</p>
+              <p>Some text about the product...</p>
+              <p><button class="modal-button" href="#myModal16">STAKE</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal16" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/plants/kale.jpg" alt="PLAAS PRODUCT" style="width:100%; height: inherit; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                                <div class="market-card" style="background-color: #D4AF37; color: white;"><img src="/images/logos/logo-plaas.png" alt="PLAAS PRODUCT" style="width:40%; height: 100px; border-radius:10px; background-color: #D4AF37;"><span><h3>0000</h3></span>
+                                  <h4>PLAAS TOKENS</h4>
+                                  
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>Purchase</span></button>
+                    </div>
+                  </div>
+
+                </div>
+      </div>
+    </div>
+  </div>
     
 </div>
 
@@ -785,10 +1364,46 @@ document.getElementById("defaultOpen").click();
    
    
   <!-- END OF MARKET -->
-        
-<!-- Footer -->
+  <script>
+    // Get the button that opens the modal
+  var btn = document.querySelectorAll("button.modal-button");
+  
+  // All page modals
+  var modals = document.querySelectorAll('.modal');
+  
+  // Get the <span> element that closes the modal
+  var spans = document.getElementsByClassName("close");
+  
+  // When the user clicks the button, open the modal
+  for (var i = 0; i < btn.length; i++) {
+   btn[i].onclick = function(e) {
+      e.preventDefault();
+      modal = document.querySelector(e.target.getAttribute("href"));
+      modal.style.display = "block";
+   }
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  for (var i = 0; i < spans.length; i++) {
+   spans[i].onclick = function() {
+      for (var index in modals) {
+        if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+      }
+   }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+       for (var index in modals) {
+        if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+       }
+      }
+  }
+  </script>
+<!-- Footer --
 <footer class="w3-center w3-black w3-padding-44">
-    <!-- <a href="#home" class="w3-button w3-light-grey" style="border-radius: 20px;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
+    <a href="#home" class="w3-button w3-light-grey" style="border-radius: 20px;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="footer-row">
       <div class="footer-column" >
         

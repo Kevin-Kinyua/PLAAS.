@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  height: 100%;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: green;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float: right;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '+';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.stock-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius:10px;
+  color: #000;
+}
+
+.stock-price {
+  color: grey;
+  font-size: 15px;
+}
+
+.stock-card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #04AA6D;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.stock-card button:hover {
+  opacity: 0.7;
+}
+
+/* ////////////////////////////////////////// 
+MODAL*/
+  /* The Modal (background) */
+  .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+
+        @keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        .modal-body {padding: 2px 16px;}
+
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+</style>
+</head>
+<body>
+
+<h2>My Stock</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="stock-card">
+      <img src="/images/animals/angus.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+            <h4>PRODUCT NAME</h4>
+            <p class="stock-price">PLAAS 00.00</p>
+            <p class="stock-price">YIELD 00.00</p>
+            <p><button class="modal-button" href="#myModal1">VIEW</button></p>
+
+              <!-- The Modal -->
+                <div id="myModal1" class="modal" style="border-radius: 10px;">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">×</span>
+                      <h4>PRODUCT NAME</h4>
+                    </div>
+                    <div class="modal-body" >
+                      <div class="w3-row ">
+                        <div class="w3-container w3-half ">
+                          <img src="/images/animals/angus.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 400px; border-radius:10px; float: left;">
+                          <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                            
+                          </div>
+                        </div>
+                        <div class="w3-container w3-half">
+                          <h5>PLAAS 00.00</h5>
+                          <h5>YIELD 00.00 (p.m)</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. </p>
+                               
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer w3-white">
+                      <br>
+                      <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>SELL STOCK</span></button>
+                    </div>
+                  </div>
+
+                </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="stock-card">
+      <img src="/images/animals/belgian blue.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+            <h4>PRODUCT NAME</h4>
+            <p class="stock-price">PLAAS 00.00</p>
+            <p class="stock-price">YIELD 00.00</p>
+            <p><button class="modal-button" href="#myModal2">VIEW</button></p>
+
+            <!-- The Modal -->
+              <div id="myModal2" class="modal" style="border-radius: 10px;">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">×</span>
+                    <h4>PRODUCT NAME</h4>
+                  </div>
+                  <div class="modal-body" >
+                    <div class="w3-row ">
+                      <div class="w3-container w3-half ">
+                        <img src="/images/animals/belgian blue.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 400px; border-radius:10px; float: left;">
+                        <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                          
+                        </div>
+                      </div>
+                      <div class="w3-container w3-half">
+                        <h5>PLAAS 00.00</h5>
+                        <h5>YIELD 00.00 (p.m)</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. </p>
+                             
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer w3-white">
+                    <br>
+                    <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>SELL STOCK</span></button>
+                  </div>
+                </div>
+
+              </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="stock-card">
+      <img src="/images/plants/arugula.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+            <h4>PRODUCT NAME</h4>
+            <p class="stock-price">PLAAS 00.00</p>
+            <p class="stock-price">YIELD 00.00</p>
+            <p><button class="modal-button" href="#myModal3">VIEW</button></p>
+
+            <!-- The Modal -->
+              <div id="myModal3" class="modal" style="border-radius: 10px;">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">×</span>
+                    <h4>PRODUCT NAME</h4>
+                  </div>
+                  <div class="modal-body" >
+                    <div class="w3-row ">
+                      <div class="w3-container w3-half ">
+                        <img src="/images/plants/arugula.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 400px; border-radius:10px; float: left;">
+                        <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                          
+                        </div>
+                      </div>
+                      <div class="w3-container w3-half">
+                        <h5>PLAAS 00.00</h5>
+                        <h5>YIELD 00.00 (p.m)</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. </p>
+                             
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer w3-white">
+                    <br>
+                    <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>SELL STOCK</span></button>
+                  </div>
+                </div>
+
+              </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="stock-card">
+      <img src="/images/plants/bell peppers.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+            <h4>PRODUCT NAME</h4>
+            <p class="stock-price">PLAAS 00.00</p>
+            <p class="stock-price">YIELD 00.00</p>
+            <p><button class="modal-button" href="#myModal4">VIEW</button></p>
+
+            <!-- The Modal -->
+              <div id="myModal4" class="modal" style="border-radius: 10px;">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">×</span>
+                    <h4>PRODUCT NAME</h4>
+                  </div>
+                  <div class="modal-body" >
+                    <div class="w3-row ">
+                      <div class="w3-container w3-half ">
+                        <img src="/images/plants/bell peppers.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 400px; border-radius:10px; float: left;">
+                        <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                          
+                        </div>
+                      </div>
+                      <div class="w3-container w3-half">
+                        <h5>PLAAS 00.00</h5>
+                        <h5>YIELD 00.00 (p.m)</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. </p>
+                             
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer w3-white">
+                    <br>
+                    <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>SELL STOCK</span></button>
+                  </div>
+                </div>
+
+              </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="stock-card">
+      <img src="/images/animals/dexter.JPG" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+            <h4>PRODUCT NAME</h4>
+            <p class="stock-price">PLAAS 00.00</p>
+            <p class="stock-price">YIELD 00.00</p>
+            <p><button class="modal-button" href="#myModal5">VIEW</button></p>
+
+            <!-- The Modal -->
+              <div id="myModal5" class="modal" style="border-radius: 10px;">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">×</span>
+                    <h4>PRODUCT NAME</h4>
+                  </div>
+                  <div class="modal-body" >
+                    <div class="w3-row ">
+                      <div class="w3-container w3-half ">
+                        <img src="/images/animals/dexter.JPG" alt="PLAAS PRODUCT" style="width:100%; height: 400px; border-radius:10px; float: left;">
+                        <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                          
+                        </div>
+                      </div>
+                      <div class="w3-container w3-half">
+                        <h5>PLAAS 00.00</h5>
+                        <h5>YIELD 00.00 (p.m)</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. </p>
+                             
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer w3-white">
+                    <br>
+                    <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>SELL STOCK</span></button>
+                  </div>
+                </div>
+
+              </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="stock-card">
+      <img src="/images/animals/haryana.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+            <h4>PRODUCT NAME</h4>
+            <p class="stock-price">PLAAS 00.00</p>
+            <p class="stock-price">YIELD 00.00</p>
+            <p><button class="modal-button" href="#myModal6">VIEW</button></p>
+
+            <!-- The Modal -->
+              <div id="myModal6" class="modal" style="border-radius: 10px;">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">×</span>
+                    <h4>PRODUCT NAME</h4>
+                  </div>
+                  <div class="modal-body" >
+                    <div class="w3-row ">
+                      <div class="w3-container w3-half ">
+                        <img src="/images/animals/haryana.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 400px; border-radius:10px; float: left;">
+                        <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                          
+                        </div>
+                      </div>
+                      <div class="w3-container w3-half">
+                        <h5>PLAAS 00.00</h5>
+                        <h5>YIELD 00.00 (p.m)</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. </p>
+                             
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer w3-white">
+                    <br>
+                    <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>SELL STOCK</span></button>
+                  </div>
+                </div>
+
+              </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="stock-card">
+      <img src="/images/plants/garlic.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+            <h4>PRODUCT NAME</h4>
+            <p class="stock-price">PLAAS 00.00</p>
+            <p class="stock-price">YIELD 00.00</p>
+            <p><button class="modal-button" href="#myModal7">VIEW</button></p>
+
+            <!-- The Modal -->
+              <div id="myModal7" class="modal" style="border-radius: 10px;">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">×</span>
+                    <h4>PRODUCT NAME</h4>
+                  </div>
+                  <div class="modal-body" >
+                    <div class="w3-row ">
+                      <div class="w3-container w3-half ">
+                        <img src="/images/plants/garlic.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 400px; border-radius:10px; float: left;">
+                        <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                          
+                        </div>
+                      </div>
+                      <div class="w3-container w3-half">
+                        <h5>PLAAS 00.00</h5>
+                        <h5>YIELD 00.00 (p.m)</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. </p>
+                             
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer w3-white">
+                    <br>
+                    <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>SELL STOCK</span></button>
+                  </div>
+                </div>
+
+              </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="stock-card">
+      <img src="/images/plants/tomatoes.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 300px; border-radius:10px 10px 0px 0px;">
+            <h4>PRODUCT NAME</h4>
+            <p class="stock-price">PLAAS 00.00</p>
+            <p class="stock-price">YIELD 00.00</p>
+            <p><button class="modal-button" href="#myModal8">VIEW</button></p>
+
+            <!-- The Modal -->
+              <div id="myModal8" class="modal" style="border-radius: 10px;">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">×</span>
+                    <h4>PRODUCT NAME</h4>
+                  </div>
+                  <div class="modal-body" >
+                    <div class="w3-row ">
+                      <div class="w3-container w3-half ">
+                        <img src="/images/plants/tomatoes.jpg" alt="PLAAS PRODUCT" style="width:100%; height: 400px; border-radius:10px; float: left;">
+                        <div style="text-align: center; padding: 10px; font-size: 2vw;">
+                          
+                        </div>
+                      </div>
+                      <div class="w3-container w3-half">
+                        <h5>PLAAS 00.00</h5>
+                        <h5>YIELD 00.00 (p.m)</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. </p>
+                             
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer w3-white">
+                    <br>
+                    <button class="modal-button" style="border-radius: 10px;background-color: #04AA6D;border: none;color: #FFFFFF; width: 50%;"><span>SELL STOCK</span></button>
+                  </div>
+                </div>
+
+              </div>
+    </div> 
+  </div>
+</div>
+
+<br>
+<br>
+
+<a href="market.html"><button class="button" ><span>Add to my stock </span></button></a>
+
+<br>
+<br>
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+      <div class="w3-container">
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+
+  <!-- MODAL SCRIPT  -->
+  <script>
+    // Get the button that opens the modal
+  var btn = document.querySelectorAll("button.modal-button");
+  
+  // All page modals
+  var modals = document.querySelectorAll('.modal');
+  
+  // Get the <span> element that closes the modal
+  var spans = document.getElementsByClassName("close");
+  
+  // When the user clicks the button, open the modal
+  for (var i = 0; i < btn.length; i++) {
+   btn[i].onclick = function(e) {
+      e.preventDefault();
+      modal = document.querySelector(e.target.getAttribute("href"));
+      modal.style.display = "block";
+   }
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  for (var i = 0; i < spans.length; i++) {
+   spans[i].onclick = function() {
+      for (var index in modals) {
+        if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+      }
+   }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+       for (var index in modals) {
+        if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+       }
+      }
+  }
+    </script>
+</body>
+</html>

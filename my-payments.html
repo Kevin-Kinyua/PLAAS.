@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+  /* font-family:arial, sans-serif;  */
+  color:#444;
+  height: 100%;
+}
+
+.rTable{
+  display:table;
+  width:100%;
+  border-collapse:collapse;
+}
+.rTableHeader{
+  display:table-header-group;
+  background-color:#ccc;
+}
+.rTableBody{
+  display:table-row-group;
+}
+.rTableRow{
+  display:table-row;
+  position:relative; 
+}
+.rTableRow:before,
+.rTableRow:after{
+  display:table;
+  content:"";
+}
+.rTableRow:after{
+  clear:both;
+}
+.rTableCell{
+  display:table-cell;
+  vertical-align:top;
+  padding:4px 6px;
+  border-bottom:1px solid #eee;
+}
+
+.paymentActions a {
+  display:inline-block;
+  padding:6px;
+  background:green;
+  color:white;
+  border-radius:5px;
+  font-size:12px;
+  text-decoration:none;
+}
+.paymentNotes { max-width:220px;}
+
+@media (max-width:480px){
+  .rTableHeader{
+    display:none;
+  }
+  .rTableRow{
+    display:block;
+    padding:10px;
+    border-bottom:1px solid #ccc;
+  }
+  .rTableCell{
+    display:block;
+    border:none;
+  }
+
+  .paymentInstallment {font-size:12px; display:block;}
+  .paymentDate {font-size:20px; display:block; float:left; font-weight:bold;}
+  .paymentAmount {font-size:20px; float:right; font-weight:bold;}
+  .paymentMethod {font-size:12px;display:block;float:none;clear:both;}
+  .paymentStatus {font-size:12px;position:absolute; top:10px; right:10px;}
+  .paymentNotes {font-size:12px;display:inline-block;float:left;}
+  .paymentActions {font-size:12px;display:block;float:none;clear:both}
+  .paymentActions a{display:block; text-align:center;}
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>My Payments</h2>
+<!-- <h4>Payments Schedule</h4> -->
+<div class="rTable">
+  <div class="rTableHeader">
+    <div class="rTableRow">  
+      <div class="rTableCell">Stock Item</div>
+      <div class="rTableCell">Breed / Type </div>
+      <div class="rTableCell">Location </div>
+      <div class="rTableCell">Date </div>
+      <div class="rTableCell">Amount (&dollar;)</div>
+      <div class="rTableCell">Payment method</div>
+      <div class="rTableCell">Status</div>
+      <div class="rTableCell">Action</div>
+    </div>
+  </div>
+  <div class="rTableBody">
+    <div class="rTableRow">  
+      <div class="rTableCell paymentInstallment">Stock name</div>
+      <div class="rTableCell paymentBreed">---</div>
+      <div class="rTableCell paymentLocation">---</div>
+      <div class="rTableCell paymentDate">01/08/2016</div>
+      <div class="rTableCell paymentAmount">189.94</div>
+      <div class="rTableCell paymentMethod">Credit/Debit Card</div>
+      <div class="rTableCell paymentStatus">Paid</div>
+      <div class="rTableCell paymentActions"><a href="#">view</a></div>
+    </div>
+    <div class="rTableRow">  
+      <div class="rTableCell paymentInstallment">Stock name</div>
+      <div class="rTableCell paymentBreed">---</div>
+      <div class="rTableCell paymentLocation">---</div>
+      <div class="rTableCell paymentDate">03/09/2016</div>
+      <div class="rTableCell paymentAmount">78.60</div>
+      <div class="rTableCell paymentMethod">Credit/Debit Card</div>
+      <div class="rTableCell paymentStatus">Payment failed</div>
+      <div class="rTableCell paymentActions"><a href="#">view</a></div>
+    </div>
+    <div class="rTableRow">  
+      <div class="rTableCell paymentInstallment">Stock name</div>
+      <div class="rTableCell paymentBreed">---</div>
+      <div class="rTableCell paymentLocation">---</div>
+      <div class="rTableCell paymentDate">03/10/2016</div>
+      <div class="rTableCell paymentAmount">78.60</div>
+      <div class="rTableCell paymentMethod">Credit/Debit Card</div>
+      <div class="rTableCell paymentStatus">Upcoming</div>
+      <div class="rTableCell paymentActions"><a href="#">view</a></div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
