@@ -1,0 +1,6 @@
+Change the hex code for the design- hex to be sent
+
+coin circulation - 1,000,000
+
+start html and css for PLAAS
+focus on UI

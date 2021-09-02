@@ -1,0 +1,23 @@
+ADMIN VIEW
+
+Change from {Confrim data} to {View more...} /✓
+
+Change Pairs:
+ETH / PLAAS /✓
+Change binance logo to plaas /✓
+
+VALIDATOR VIEW
+Confirmation after stake page/✓
+string> Your unique identifier /✓
+
+
+----------------------------------------------------------------
+
+Add purchase verification for pFarm/✓
+pairing of coins/✓
+prototype presentation mode before wednesday/✓
+
+Validator's view
+-How many were validated/✓
+-Return on investment/✓
+-farmer yield growth/✓
